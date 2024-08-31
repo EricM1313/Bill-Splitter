@@ -12,7 +12,6 @@ def split(d):
     ret = []
     for i in range(1,size):
         if owes[i] > 0:
-            print(67)
             ret.append(f"{names[i]} owes {names[i-1]} {owes[i]} dollars")
         elif owes[i] < 0:
             ret.append(f"{names[i-1]} owes {names[i]} {owes[i]*-1} dollars")
